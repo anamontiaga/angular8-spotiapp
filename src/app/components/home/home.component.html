@@ -1,7 +1,7 @@
 <div class="card-columns">
   <div *ngFor="let release of newReleases" class="card">
     <img
-      [src]="release.images[0].url"
+      [src]="release.images | noimage"
       class="card-img-top"
       alt="release.name"
     />
